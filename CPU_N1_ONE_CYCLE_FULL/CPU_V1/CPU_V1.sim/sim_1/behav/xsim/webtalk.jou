@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:47:09 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Sat Dec 20 12:41:28 2025
+# Process ID: 3953
+# Current directory: /media/steckler/xilinx_linux/SDR_custom/SDR/Software/CPU_N1_ONE_CYCLE_FULL/CPU_V1/CPU_V1.sim/sim_1/behav/xsim
+# Command line: wbtcv -mode batch -source /media/steckler/xilinx_linux/SDR_custom/SDR/Software/CPU_N1_ONE_CYCLE_FULL/CPU_V1/CPU_V1.sim/sim_1/behav/xsim/xsim.dir/A_wrapper_behav/webtalk/xsim_webtalk.tcl -notrace
+# Log file: /media/steckler/xilinx_linux/SDR_custom/SDR/Software/CPU_N1_ONE_CYCLE_FULL/CPU_V1/CPU_V1.sim/sim_1/behav/xsim/webtalk.log
+# Journal file: /media/steckler/xilinx_linux/SDR_custom/SDR/Software/CPU_N1_ONE_CYCLE_FULL/CPU_V1/CPU_V1.sim/sim_1/behav/xsim/webtalk.jou
+#-----------------------------------------------------------
+source /media/steckler/xilinx_linux/SDR_custom/SDR/Software/CPU_N1_ONE_CYCLE_FULL/CPU_V1/CPU_V1.sim/sim_1/behav/xsim/xsim.dir/A_wrapper_behav/webtalk/xsim_webtalk.tcl -notrace

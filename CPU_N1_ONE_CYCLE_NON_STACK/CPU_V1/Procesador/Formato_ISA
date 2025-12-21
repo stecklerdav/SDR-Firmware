@@ -1,0 +1,98 @@
+
+En tu CPU ACTUAL casi todas las instrucciones pasan por la ALU:
+
+ADD → ALU
+
+SUB → ALU
+
+MUL → ALU
+
+AND → ALU
+
+OR → ALU
+
+XOR → ALU
+
+NOT → ALU
+
+ADDI → ALU
+
+SUBI → ALU
+
+LOAD → usa ALU para calcular la dirección (rd = MEM[rs1+imm6])
+
+STORE → usa ALU para calcular dirección
+
+BEQZ → NO ejecuta ALU, solo usa flags anteriores
+
+JMP → tampoco ejecuta ALU
+
+HALT → detiene todo
+
+
+
+Formato R — Operaciones entre registros (3 operandos)
+[15:12] opcode   (4 bits)
+[11:9]  rd       (3 bits)
+[8:6]   rs1      (3 bits)
+[5:3]   rs2      (3 bits)
+[2:0]   unused   (3 bits = 000)
+
+
+Para: ADD, SUB, MUL, AND, OR, XOR, MOVR
+
+
+Formato I — Inmediatos, saltos, loads
+[15:12] opcode   (4 bits)
+[11:9]  rd       (3 bits)
+[8:6]   rs1      (3 bits)
+[5:0]   imm6     (6 bits, signo opcional)
+
+
+Para: ADDI, SUBI, LOAD, BEQ, JMP
+
+
+Formato S — Store
+[15:12] opcode   (4 bits)
+[11:9]  rs1      (3 bits)   ; base
+[8:6]   rs2      (3 bits)   ; dato
+[5:0]   imm6     (6 bits)
+
+
+2. REGISTROS
+8 registros generales:
+Nombre	        Código
+R0	address 000    
+R1	address 001
+R2	address 010
+R3	address 011
+R4	address 100
+R5	address 101
+R6	address 110
+R7	address 111
+
+3. OPCODES
+Opcode (hex)	Nombre	Formato	Función
+0x0	NOP	-	No hace nada (No hace nada; no modifica registros ni memoria; PC = PC + 1)
+0x1	ADD	R	rd = rs1 + rs2   (suma de dos registros)
+0x2	SUB	R	rd = rs1 - rs2   (resta de dos registros)
+0x3	MUL	R	rd = rs1 * rs2   (multiplicacion de dos registros)
+0x4	ADDI	I	rd = rs1 + imm6  (suma de un registro y un número inmediato de 6 bits)
+0x5	SUBI	I	rd = rs1 - imm6  (resta de un registro y un número inmediato de 6 bits)
+0x6	LOAD	I	rd = RAM[rs1 + imm6] (carga desde memoria usando base+desplazamiento)
+0x7	STORE	S	RAM[rs1 + imm6] = rs2 (almacena el valor del registro rs2 en memoria usando base+desplazamiento)
+0x8	BEQ	I	if(rd == rs1) PC = PC + imm6 (salto condicional relativo si dos registros son iguales)
+0x9	JMP	I	PC = PC + imm6 (salto incondicional relativo)
+0xF	HALT	-	Detiene CPU (Detiene el procesador; el PC deja de avanzar y se activa una señal de parada)
+
+
+
+
+
+
+
+
+
+
+
+

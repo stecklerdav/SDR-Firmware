@@ -1,0 +1,63 @@
+{
+   "ExpandedHierarchyInLayout":"",
+   "PinnedBlocks":"/pc_0|/control_unit_0|/regfile_0|/alu_0|/proc_sys_reset_0|/xlconstant_0|/xlconstant_1|/xlconstant_2|/processing_system7_0|/util_vector_logic_0|/irom_0|/uram_0|/alu_b_mux_0|/mem_or_alu_mux_0|/stack_unit_0|",
+   "guistr":"# # String gsaved with Nlview 7.0.19  2019-03-26 bk=1.5019 VDI=41 GEI=35 GUI=JA:9.0 TLS
+#  -string -flagsOSRD
+preplace port DDR -pg 1 -lvl 12 -x 3410 -y -110 -defaultsOSRD
+preplace port FIXED_IO -pg 1 -lvl 12 -x 3410 -y -90 -defaultsOSRD
+preplace inst pc_0 -pg 1 -lvl 5 -x 1030 -y -200 -defaultsOSRD
+preplace inst regfile_0 -pg 1 -lvl 9 -x 2450 -y -430 -defaultsOSRD
+preplace inst processing_system7_0 -pg 1 -lvl 1 -x -470 -y -130 -defaultsOSRD
+preplace inst proc_sys_reset_0 -pg 1 -lvl 4 -x 660 -y -190 -defaultsOSRD
+preplace inst xlconstant_0 -pg 1 -lvl 3 -x 90 -y 80 -defaultsOSRD
+preplace inst xlconstant_1 -pg 1 -lvl 3 -x 90 -y -120 -defaultsOSRD
+preplace inst xlconstant_2 -pg 1 -lvl 3 -x 90 -y -20 -defaultsOSRD
+preplace inst util_vector_logic_0 -pg 1 -lvl 2 -x -140 -y -120 -defaultsOSRD
+preplace inst irom_0 -pg 1 -lvl 6 -x 1300 -y -210 -defaultsOSRD
+preplace inst alu_b_mux_0 -pg 1 -lvl 10 -x 2870 -y -350 -defaultsOSRD
+preplace inst mem_or_alu_mux_0 -pg 1 -lvl 10 -x 2870 -y -210 -defaultsOSRD
+preplace inst uram_0 -pg 1 -lvl 9 -x 2450 -y -230 -defaultsOSRD
+preplace inst control_unit_0 -pg 1 -lvl 7 -x 1640 -y -290 -defaultsOSRD
+preplace inst alu_0 -pg 1 -lvl 11 -x 3200 -y -320 -defaultsOSRD
+preplace inst stack_unit_0 -pg 1 -lvl 8 -x 2040 -y 110 -defaultsOSRD
+preplace netloc processing_system7_0_FCLK_CLK0 1 1 8 -300 -220 N -220 170 -290 840 -290 1170 -490 N -490 N -490 2240
+preplace netloc proc_sys_reset_0_peripheral_reset 1 4 1 840 -210n
+preplace netloc xlconstant_0_dout 1 3 1 190 -150n
+preplace netloc xlconstant_1_dout 1 3 1 170 -190n
+preplace netloc xlconstant_2_dout 1 3 1 180 -170n
+preplace netloc util_vector_logic_0_Res 1 2 2 10 -210 N
+preplace netloc pc_0_pc 1 5 1 N -200
+preplace netloc regfile_0_rdata1 1 9 2 N -440 3060
+preplace netloc control_unit_0_rd 1 7 2 1810 -440 N
+preplace netloc control_unit_0_rs1 1 7 2 1830 -400 N
+preplace netloc control_unit_0_rs2 1 7 2 1830 -380 N
+preplace netloc irom_0_data_ 1 6 1 1440 -330n
+preplace netloc control_unit_0_reg_write 1 7 2 1820 -460 N
+preplace netloc control_unit_0_alu_op 1 7 4 NJ -190 2220J -560 2620 -130 3060
+preplace netloc processing_system7_0_FCLK_RESET0_N 1 1 1 -290 -120n
+preplace netloc control_unit_0_imm6 1 7 3 N -350 2210 -120 2630
+preplace netloc control_unit_0_alu_src_imm 1 7 3 N -290 2200 -130 2600
+preplace netloc alu_b_mux_0_alu_b 1 10 1 3050 -350n
+preplace netloc control_unit_0_mem_read 1 7 3 N -270 2230 -550 2610
+preplace netloc control_unit_0_mem_write 1 7 2 NJ -250 2190
+preplace netloc control_unit_0_jump_en 1 4 4 850 -480 NJ -480 NJ -480 1800
+preplace netloc control_unit_0_jump_offset 1 4 4 860 -470 NJ -470 NJ -470 1790
+preplace netloc mem_or_alu_mux_0_reg_wdata 1 8 3 2250J -580 N -580 3040
+preplace netloc uram_0_rdata 1 9 1 2590 -230n
+preplace netloc alu_0_result 1 8 4 2260J -570 2640 -450 N -450 3340
+preplace netloc regfile_0_rdata2 1 8 2 2270 -540 2630
+preplace netloc alu_0_flag_z 1 6 6 1490 -590 NJ -590 NJ -590 N -590 N -590 3350
+preplace netloc alu_0_flag_c 1 6 6 1460 -620 NJ -620 NJ -620 N -620 N -620 3380
+preplace netloc alu_0_flag_n 1 6 6 1480 -610 NJ -610 NJ -610 N -610 N -610 3360
+preplace netloc alu_0_flag_v 1 6 6 1470 -600 NJ -600 NJ -600 N -600 N -600 3370
+preplace netloc processing_system7_0_DDR 1 1 11 -320 -310 NJ -310 NJ -310 NJ -310 NJ -310 1450J -110 NJ -110 NJ -110 N -110 N -110 N
+preplace netloc processing_system7_0_FIXED_IO 1 1 11 -310 -300 NJ -300 NJ -300 NJ -300 NJ -300 1430J -100 NJ -100 NJ -100 N -100 N -100 3360
+levelinfo -pg 1 -840 -470 -140 90 660 1030 1300 1640 2040 2450 2870 3200 3410
+pagesize -pg 1 -db -bbox -sgen -840 -970 3530 780
+"
+}
+{
+   "da_board_cnt":"1",
+   "da_clkrst_cnt":"2",
+   "da_ps7_cnt":"3"
+}
