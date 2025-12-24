@@ -5,3 +5,6 @@
 	path = fpga/plutosdr-fw
 	url = https://github.com/stecklerdav/plutosdr-fw.git
 	branch = adi-v0.34-no-wrapper
+[submodule "firmware/plutosdr-fw"]
+	path = firmware/plutosdr-fw
+	url = https://github.com/analogdevicesinc/plutosdr-fw.git
