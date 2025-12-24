@@ -1,1 +1,7 @@
-colocar todos los archivos de conclusiones aca, generarlo en cada sesion
+## Submodules
+
+This project uses `plutosdr-fw` as a git submodule (recursive).
+Clone with:
+
+git clone --recursive https://github.com/stecklerdav/SDR-Firmware.git
+
