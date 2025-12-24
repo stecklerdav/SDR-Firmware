@@ -1,0 +1,19 @@
+# Vivado generated files
+*.jou
+*.log
+*.str
+*.xpr
+*.save
+
+*.cache/
+*.runs/
+*.srcs/
+*.hw/
+
+# Pluto FPGA build artifacts
+fpga/pluto/pluto.*
+fpga/pluto/system_bd.tcl
+
+# Backup files
+*~
+
