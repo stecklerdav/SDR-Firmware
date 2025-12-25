@@ -1,4 +1,10 @@
 
+
+
+debo generar el xrp cn no wrapper hacerlo
+
+*genere el proyecto pluto de manera mantenible ahora debo crear el pluto con make para modificarlo en vivado, debo crearlo en la crpeta mantenible /media/steckler/xilinx_linux/SDR_custom/SDR/Software/fpga/plutosdr-fw/projects/pluto    
+
  
 
 ** tomar en cuenta implementar un stack para hacer saltos de interrupciones y tambien implementar gpio
