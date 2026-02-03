@@ -3,7 +3,7 @@
 <!--                                                         -->
 <!-- Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.   -->
 
-<Project Version="7" Minor="40" Path="/media/steckler/xilinx_linux/SDR_custom/SDR/Software/CPU_N1_ONE_CYCLE_FULL/CPU_V1/CPU_V1.xpr">
+<Project Version="7" Minor="40" Path="/home/steckler/repo/SDR-Firmware/CPU_N1_ONE_CYCLE_FULL/CPU_V1/CPU_V1.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
     <Option Name="Id" Val="9575f41180e14107b52ae1c793f66669"/>
@@ -138,6 +138,14 @@
       </File>
       <File Path="$PSRCDIR/sources_1/bd/A/hdl/A_wrapper.v">
         <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/new/pc_unit.v">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>

@@ -31,6 +31,9 @@ module uram #(
 
     output reg  [DATA_WIDTH-1:0]     rdata
 );
+    (* ram_style = "distributed" *) //(LUTRAM) - buffers pequeños
+    
+    //(* ram_style = "block" *)   //  RAM (Block RAM) - memorias grandes
 
     reg [DATA_WIDTH-1:0] mem [0:(1<<ADDR_WIDTH)-1];
 
