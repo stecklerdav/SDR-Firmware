@@ -1,0 +1,87 @@
+{
+   "ExpandedHierarchyInLayout":"",
+   "PinnedBlocks":"/processing_system7_0|/util_vector_logic_0|/xlconstant_2|/xlconstant_1|/xlconstant_0|/proc_sys_reset_0|/pc_unit_0|/eerom_0|/rv32i_decoder_0|/rv32i_regfile_0|/rv32i_control_full_0|/rv32i_alu_0|/rv32i_lsu_0|/rv32i_ram_datav_0|/rv32i_addr_imm_mux_0|/rv32i_wb_mux_0|/rv32i_opB_mux_0|/rv32i_opA_mux_0|/rv32i_imm_mux_0|/rv32i_pc_redirect_0|/xlconstant_3|",
+   "guistr":"# # String gsaved with Nlview 7.0.19  2019-03-26 bk=1.5019 VDI=41 GEI=35 GUI=JA:9.0 TLS
+#  -string -flagsOSRD
+preplace port DDR -pg 1 -lvl 1 -x -330 -y -470 -defaultsOSRD -top
+preplace port FIXED_IO -pg 1 -lvl 1 -x -310 -y -470 -defaultsOSRD -top
+preplace inst proc_sys_reset_0 -pg 1 -lvl 4 -x 410 -y -60 -defaultsOSRD
+preplace inst processing_system7_0 -pg 1 -lvl 1 -x -430 -y -110 -defaultsOSRD
+preplace inst util_vector_logic_0 -pg 1 -lvl 2 -x -120 -y -40 -defaultsOSRD
+preplace inst xlconstant_0 -pg 1 -lvl 3 -x 120 -y 250 -defaultsOSRD
+preplace inst xlconstant_1 -pg 1 -lvl 3 -x 120 -y 150 -defaultsOSRD
+preplace inst xlconstant_2 -pg 1 -lvl 3 -x 120 -y 50 -defaultsOSRD
+preplace inst xlconstant_3 -pg 1 -lvl 4 -x 410 -y 160 -defaultsOSRD
+preplace inst pc_unit_0 -pg 1 -lvl 5 -x 800 -y -40 -defaultsOSRD
+preplace inst eerom_0 -pg 1 -lvl 6 -x 1240 -y -50 -defaultsOSRD
+preplace inst rv32i_decoder_0 -pg 1 -lvl 7 -x 1600 -y -50 -defaultsOSRD
+preplace inst rv32i_regfile_0 -pg 1 -lvl 8 -x 2030 -y -330 -defaultsOSRD
+preplace inst rv32i_control_full_0 -pg 1 -lvl 8 -x 2030 -y -50 -defaultsOSRD
+preplace inst rv32i_ram_datav_0 -pg 1 -lvl 10 -x 2930 -y 80 -defaultsOSRD
+preplace inst rv32i_alu_0 -pg 1 -lvl 9 -x 2540 -y -110 -defaultsOSRD
+preplace inst rv32i_lsu_0 -pg 1 -lvl 11 -x 3300 -y 70 -defaultsOSRD
+preplace inst rv32i_addr_imm_mux_0 -pg 1 -lvl 9 -x 2540 -y 130 -defaultsOSRD
+preplace inst rv32i_wb_mux_0 -pg 1 -lvl 10 -x 2930 -y -240 -defaultsOSRD
+preplace inst rv32i_pc_redirect_0 -pg 1 -lvl 6 -x 1240 -y 280 -defaultsOSRD
+preplace inst rv32i_imm_mux_0 -pg 1 -lvl 9 -x 2540 -y 600 -defaultsOSRD
+preplace inst rv32i_opA_mux_0 -pg 1 -lvl 9 -x 2540 -y 280 -defaultsOSRD
+preplace inst rv32i_opB_mux_0 -pg 1 -lvl 9 -x 2540 -y 430 -defaultsOSRD
+preplace netloc xlconstant_0_dout 1 3 1 230 -20n
+preplace netloc xlconstant_1_dout 1 3 1 200 -60n
+preplace netloc xlconstant_2_dout 1 3 1 210 -40n
+preplace netloc processing_system7_0_FCLK_RESET0_N 1 1 1 -280 -80n
+preplace netloc util_vector_logic_0_Res 1 2 2 30 -80 N
+preplace netloc processing_system7_0_FCLK_CLK0 1 1 9 NJ -100 N -100 220 40 590 100 N 100 1460 130 1820 140 2310 40 N
+preplace netloc proc_sys_reset_0_peripheral_reset 1 4 1 N -60
+preplace netloc pc_unit_0_pc 1 5 4 990 110 1440 210 N 210 2240
+preplace netloc xlconstant_3_dout 1 4 1 600 -40n
+preplace netloc eerom_0_instr 1 6 1 N -50
+preplace netloc rv32i_decoder_0_rs1 1 7 1 1790 -360n
+preplace netloc rv32i_decoder_0_rs2 1 7 1 1800 -340n
+preplace netloc rv32i_decoder_0_rd 1 7 1 1810 -320n
+preplace netloc rv32i_decoder_0_opcode 1 7 1 1840 -110n
+preplace netloc rv32i_decoder_0_funct3 1 7 1 1830 -90n
+preplace netloc rv32i_decoder_0_funct7 1 7 1 1810 -70n
+preplace netloc rv32i_decoder_0_fmt 1 7 1 1800 -50n
+preplace netloc rv32i_decoder_0_bit30 1 7 1 1790 -30n
+preplace netloc rv32i_regfile_0_rs2_rdata 1 5 6 1020 430 N 430 N 430 2260 20 2750 -20 3100
+preplace netloc rv32i_control_full_0_mem_we 1 8 2 2290 30 2710
+preplace netloc rv32i_lsu_0_be 1 9 3 2760 180 N 180 3470
+preplace netloc rv32i_ram_datav_0_rdata 1 10 1 3120 70n
+preplace netloc rv32i_control_full_0_lsu_size 1 8 3 N -20 2730J -40 3110
+preplace netloc rv32i_control_full_0_lsu_unsigned 1 8 3 NJ 0 2740 -30 3090
+preplace netloc rv32i_regfile_0_rs1_rdata 1 5 4 1000 120 1420 220 N 220 2350
+preplace netloc rv32i_control_full_0_mem_re 1 8 1 2320 -60n
+preplace netloc rv32i_decoder_0_imm_i 1 5 4 1010 130 1430 140 1780J 180 2360
+preplace netloc rv32i_decoder_0_imm_s 1 7 2 1770J 190 2370
+preplace netloc rv32i_control_full_0_alu_op 1 8 1 2360J -140n
+preplace netloc rv32i_alu_0_Y 1 9 2 2720 -50 3120
+preplace netloc rv32i_control_full_0_wb_sel 1 8 2 2250J -210 2690
+preplace netloc rv32i_lsu_0_load_data 1 9 3 2740 -100 NJ -100 3480
+preplace netloc pc_unit_0_pc_plus4 1 5 5 980 90 1450J 170 NJ 170 2280J -200 2700J
+preplace netloc rv32i_decoder_0_imm_u 1 7 3 1750 200 2330J -190 2710J
+preplace netloc rv32i_wb_mux_0_rd_wdata 1 7 4 1850 150 2300J -30 2700J -60 3120
+preplace netloc rv32i_control_full_0_rd_we 1 7 2 1860 160 2210
+preplace netloc rv32i_decoder_0_imm_b 1 5 4 1000 500 NJ 500 1760 610 N
+preplace netloc rv32i_decoder_0_imm_j 1 5 4 1010 510 NJ 510 1740 650 N
+preplace netloc rv32i_control_full_0_jal 1 5 4 1050 460 NJ 460 NJ 460 2200
+preplace netloc rv32i_control_full_0_jalr 1 5 4 1060 450 NJ 450 NJ 450 2190
+preplace netloc rv32i_control_full_0_branch_en 1 5 4 1030 470 NJ 470 NJ 470 2230
+preplace netloc rv32i_control_full_0_branch_f3 1 5 4 1040 490 NJ 490 NJ 490 2220
+preplace netloc rv32i_pc_redirect_0_pc_redirect_valid 1 4 3 610 480 NJ 480 1450
+preplace netloc rv32i_pc_redirect_0_pc_redirect_target 1 4 3 620 440 NJ 440 1430
+preplace netloc rv32i_control_full_0_imm_sel 1 8 1 2250 -80n
+preplace netloc rv32i_control_full_0_opA_sel 1 8 1 2340J -120n
+preplace netloc rv32i_imm_mux_0_imm_out 1 8 2 2380 710 2690
+preplace netloc rv32i_control_full_0_opB_sel_imm 1 8 1 2270J -100n
+preplace netloc rv32i_opA_mux_0_A 1 8 2 2370 10 2690J
+preplace netloc rv32i_opB_mux_0_B 1 8 2 2380 -10 2700J
+preplace netloc processing_system7_0_DDR 1 1 1 -280J -450n
+preplace netloc processing_system7_0_FIXED_IO 1 1 1 -270J -460n
+levelinfo -pg 1 -590 -430 -120 120 410 800 1240 1600 2030 2540 2930 3300 3500
+pagesize -pg 1 -db -bbox -sgen -590 -580 3500 900
+"
+}
+{
+   "da_ps7_cnt":"1"
+}
