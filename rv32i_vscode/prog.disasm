@@ -1,0 +1,17 @@
+
+prog.elf:     file format elf32-littleriscv
+
+
+Disassembly of section .text:
+
+00000000 <_start>:
+   0:	00001117          	auipc	sp,0x1
+   4:	80010113          	addi	sp,sp,-2048 # 800 <_stack_top>
+   8:	008000ef          	jal	10 <main>
+   c:	0000006f          	j	c <_start+0xc>
+
+00000010 <main>:
+  10:	40002783          	lw	a5,1024(zero) # 400 <GPIO>
+  14:	0a500713          	li	a4,165
+  18:	00e7a023          	sw	a4,0(a5)
+  1c:	0000006f          	j	1c <main+0xc>
