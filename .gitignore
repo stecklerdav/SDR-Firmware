@@ -17,3 +17,4 @@ fpga/pluto/system_bd.tcl
 # Backup files
 *~
 
+*.bundle
