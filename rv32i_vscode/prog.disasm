@@ -6,12 +6,35 @@ Disassembly of section .text:
 
 00000000 <_start>:
    0:	00001117          	auipc	sp,0x1
-   4:	80010113          	addi	sp,sp,-2048 # 800 <_stack_top>
+   4:	40010113          	addi	sp,sp,1024 # 1400 <_stack_top>
    8:	008000ef          	jal	10 <main>
    c:	0000006f          	j	c <_start+0xc>
 
 00000010 <main>:
-  10:	40002783          	lw	a5,1024(zero) # 400 <GPIO>
-  14:	0a500713          	li	a4,165
-  18:	00e7a023          	sw	a4,0(a5)
-  1c:	0000006f          	j	1c <main+0xc>
+  10:	48d16737          	lui	a4,0x48d16
+  14:	00000693          	li	a3,0
+  18:	b4e70713          	addi	a4,a4,-1202 # 48d15b4e <_stack_top+0x48d1474e>
+  1c:	00100513          	li	a0,1
+  20:	00800593          	li	a1,8
+  24:	0016f793          	andi	a5,a3,1
+  28:	04079063          	bnez	a5,68 <main+0x58>
+  2c:	0026f793          	andi	a5,a3,2
+  30:	0017b793          	seqz	a5,a5
+  34:	40f007b3          	neg	a5,a5
+  38:	00e7f793          	andi	a5,a5,14
+  3c:	02378793          	addi	a5,a5,35
+  40:	00168693          	addi	a3,a3,1
+  44:	00f74733          	xor	a4,a4,a5
+  48:	fcb69ee3          	bne	a3,a1,24 <main+0x14>
+  4c:	03974713          	xori	a4,a4,57
+  50:	40e02223          	sw	a4,1028(zero) # 404 <test_result>
+  54:	cafec7b7          	lui	a5,0xcafec
+  58:	abe78793          	addi	a5,a5,-1346 # cafebabe <_stack_top+0xcafea6be>
+  5c:	40f02023          	sw	a5,1024(zero) # 400 <test_done>
+  60:	00000013          	nop
+  64:	ffdff06f          	j	60 <main+0x50>
+  68:	0036f613          	andi	a2,a3,3
+  6c:	01200793          	li	a5,18
+  70:	fca608e3          	beq	a2,a0,40 <main+0x30>
+  74:	01400793          	li	a5,20
+  78:	fc9ff06f          	j	40 <main+0x30>

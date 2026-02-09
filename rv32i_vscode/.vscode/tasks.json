@@ -5,9 +5,22 @@
       "label": "Build RV32I",
       "type": "shell",
       "command": "make",
-      "options": { "cwd": "${workspaceFolder}" },
+      "args": [
+        "CROSS=riscv-none-elf-",
+        "CC=riscv-none-elf-gcc",
+        "AS=riscv-none-elf-gcc",
+        "LD=riscv-none-elf-gcc",
+        "OBJDUMP=riscv-none-elf-objdump",
+        "OBJCOPY=riscv-none-elf-objcopy"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}",
+        "env": {
+          "PATH": "/home/steckler/opt/xpack-riscv-none-elf-gcc-15.2.0-1/bin:${env:PATH}"
+        }
+      },
       "group": { "kind": "build", "isDefault": true },
-      "problemMatcher": []
+      "problemMatcher": ["$gcc"]
     }
   ]
 }

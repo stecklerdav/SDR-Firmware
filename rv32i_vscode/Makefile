@@ -4,9 +4,9 @@ OBJCOPY=riscv64-unknown-elf-objcopy
 
 CFLAGS=-march=rv32i -mabi=ilp32 -Os -ffreestanding -nostdlib -nostartfiles -fno-pic \
       -fno-asynchronous-unwind-tables -fno-unwind-tables
-LDFLAGS=-Wl,-T,link.ld
+LDFLAGS=-Wl,-T,link.ld -lgcc
 
-all: prog.mem prog.disasm
+all: prog.coe prog.disasm
 
 prog.elf: start.S main.c link.ld
 	$(CC) $(CFLAGS) start.S main.c $(LDFLAGS) -o $@
@@ -20,5 +20,8 @@ prog.mem: prog.bin bin2mem.py
 prog.disasm: prog.elf
 	$(OBJDUMP) -d -S $< > $@
 
+prog.coe: prog.mem mem2coe.py
+	python3 mem2coe.py prog.mem prog.coe
+
 clean:
-	rm -f prog.elf prog.bin prog.mem prog.disasm
+	rm -f prog.elf prog.bin prog.mem prog.coe prog.disasm

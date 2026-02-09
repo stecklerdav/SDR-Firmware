@@ -2,7 +2,7 @@ ENTRY(_start)
 
 MEMORY {
   ROM (rx)  : ORIGIN = 0x00000000, LENGTH = 1K      /* 256 words */
-  RAM (rwx) : ORIGIN = 0x00000400, LENGTH = 1K      /* RAM cerca para no crear gaps */
+  RAM (rwx) : ORIGIN = 0x00000400, LENGTH = 4K      /* RAM cerca para no crear gaps */
 }
 
 SECTIONS {
