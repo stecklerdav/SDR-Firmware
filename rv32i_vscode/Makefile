@@ -1,27 +1,36 @@
-CC=riscv64-unknown-elf-gcc
-OBJDUMP=riscv64-unknown-elf-objdump
-OBJCOPY=riscv64-unknown-elf-objcopy
+TOOLCHAIN := $(HOME)/toolchains/riscv/bin
 
-CFLAGS=-march=rv32i -mabi=ilp32 -Os -ffreestanding -nostdlib -nostartfiles -fno-pic \
-      -fno-asynchronous-unwind-tables -fno-unwind-tables
-LDFLAGS=-Wl,-T,link.ld -lgcc
+CC      := $(TOOLCHAIN)/riscv32-unknown-elf-gcc
+OBJDUMP := $(TOOLCHAIN)/riscv32-unknown-elf-objdump
+OBJCOPY := $(TOOLCHAIN)/riscv32-unknown-elf-objcopy
+NM      := $(TOOLCHAIN)/riscv32-unknown-elf-nm
+SIZE    := $(TOOLCHAIN)/riscv32-unknown-elf-size
 
-all: prog.coe prog.disasm
+CFLAGS  := -march=rv32i -mabi=ilp32 -Os -ffreestanding -nostartfiles -fno-pic \
+          -fno-asynchronous-unwind-tables -fno-unwind-tables \
+          -ffunction-sections -fdata-sections \
+          -Wall -Wextra
 
-prog.elf: start.S main.c link.ld
-	$(CC) $(CFLAGS) start.S main.c $(LDFLAGS) -o $@
+LDFLAGS := -Wl,-T,link.ld,--gc-sections \
+          --specs=nano.specs --specs=nosys.specs \
+          -lc -lgcc
+
+all: prog.elf prog.bin prog.disasm
+
+prog.elf: start.S main.c syscalls.c link.ld
+	$(CC) $(CFLAGS) start.S main.c syscalls.c $(LDFLAGS) -o $@
+	$(SIZE) $@
 
 prog.bin: prog.elf
-	$(OBJCOPY) -O binary -j .text $< $@
-
-prog.mem: prog.bin bin2mem.py
-	python3 bin2mem.py prog.bin prog.mem
+	$(OBJCOPY) -O binary -j .text -j .rodata $< $@
 
 prog.disasm: prog.elf
 	$(OBJDUMP) -d -S $< > $@
 
-prog.coe: prog.mem mem2coe.py
-	python3 mem2coe.py prog.mem prog.coe
+symbols: prog.elf
+	$(NM) prog.elf | grep -E "malloc|free|_sbrk|__heap_start|__heap_end|__stack_top"
 
 clean:
-	rm -f prog.elf prog.bin prog.mem prog.coe prog.disasm
+	rm -f prog.elf prog.bin prog.disasm
+
+.PHONY: all clean symbols

@@ -1,0 +1,8 @@
+timestamp=[2021-09-10 12:00:10], mode=WORKBENCH_START, duration=0:00:05.205, duration_ms=5205, data={}
+timestamp=[2021-09-10 12:00:10], mode=WORKBENCH_UI_INIT, duration=0:00:00.444, duration_ms=444, data={editors_count=0, platform_editors_count=0, projects_count=0, platform_projects_count=0, active_platform_editor=false, projects=}
+timestamp=[2021-09-10 12:00:13], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:02.214, duration_ms=2214, data={}
+timestamp=[2021-09-10 12:01:31], mode=APP_CREATION, duration=0:00:25.521, duration_ms=25521, data={name=axi_uart, project_type=sdk, os=standalone, processor=psu_cortexa53, runtime=cpp, platform=design_1_wrapper, application_type=application}
+timestamp=[2021-09-10 12:04:15], mode=PLATFORM_GENERATION, duration=0:01:42.816, duration_ms=102816, data={name=design_1_wrapper}
+timestamp=[2021-09-10 12:04:15], mode=BUILD, duration=0:00:00.626, duration_ms=626, data={name=axi_uart, configuration=Debug, clean_build=false}
+timestamp=[2021-09-10 12:04:21], mode=BUILD, duration=0:00:05.042, duration_ms=5042, data={name=axi_uart_system, configuration=Debug, clean_build=false}
+timestamp=[2021-09-10 12:29:39], mode=MISC, duration=0:00:03.707, duration_ms=3707, data={name=axi_uart_system, type=bif_creation}

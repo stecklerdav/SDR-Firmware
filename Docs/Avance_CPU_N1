@@ -1,18 +1,16 @@
 
+  
 
 
-debo generar el xrp cn no wrapper hacerlo
+              ****  Proximo generar el clock y ver que pasa en el ILA con Vivado y ver las senales del RV32i ***
 
-*genere el proyecto pluto de manera mantenible ahora debo crear el pluto con make para modificarlo en vivado, debo crearlo en la crpeta mantenible /media/steckler/xilinx_linux/SDR_custom/SDR/Software/fpga/plutosdr-fw/projects/pluto    
 
- 
+17/02/2026
 
-** tomar en cuenta implementar un stack para hacer saltos de interrupciones y tambien implementar gpio
-** terminar de ver todo el diagrama de tiempo de todos losboque conectados usando simulation xsim para entender antes de pasar para instrucciones de salto y pipeline en futuro
-** pulir el procesador monociclo con caracteristicas de seguridad prototipo DO-254 friendly	
- 
- **  incorporar un pipeline de 5 etapas **
+	-Genere todo el bitsteam + hardware de un riscv RV32i + ZynqMP en vivado Luego cargue el xsa en vitis.(Debo generar un  .c en vitis que active el clk del zynqMP para dar el clk al RISCV)  
 
+
+ 	
 15/12/025
 
 	-videos sobre arquitectura RISCV

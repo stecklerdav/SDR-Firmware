@@ -1,0 +1,325 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:47:09 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Sat Feb 14 14:52:19 2026
+# Process ID: 238476
+# Current directory: /media/steckler/xilinx_linux/SDR_custom/SDR/Software/SDR-Firmware/CPU_N1_ONE_CYCLE_FULL_RISCV_REAL/CPU_V1/CPU_V1.runs/RISCV_rv32i_control_full_0_0_synth_1
+# Command line: vivado -log RISCV_rv32i_control_full_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source RISCV_rv32i_control_full_0_0.tcl
+# Log file: /media/steckler/xilinx_linux/SDR_custom/SDR/Software/SDR-Firmware/CPU_N1_ONE_CYCLE_FULL_RISCV_REAL/CPU_V1/CPU_V1.runs/RISCV_rv32i_control_full_0_0_synth_1/RISCV_rv32i_control_full_0_0.vds
+# Journal file: /media/steckler/xilinx_linux/SDR_custom/SDR/Software/SDR-Firmware/CPU_N1_ONE_CYCLE_FULL_RISCV_REAL/CPU_V1/CPU_V1.runs/RISCV_rv32i_control_full_0_0_synth_1/vivado.jou
+#-----------------------------------------------------------
+source RISCV_rv32i_control_full_0_0.tcl -notrace
+Command: synth_design -top RISCV_rv32i_control_full_0_0 -part xc7z010clg225-1 -mode out_of_context
+Starting synth_design
+WARNING: [IP_Flow 19-3571] IP 'RISCV_rv32i_control_full_0_0' is restricted:
+* Module reference is stale and needs refreshing.
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 238737 
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1465.070 ; gain = 89.715 ; free physical = 149 ; free virtual = 5049
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'RISCV_rv32i_control_full_0_0' [/media/steckler/xilinx_linux/SDR_custom/SDR/Software/SDR-Firmware/CPU_N1_ONE_CYCLE_FULL_RISCV_REAL/CPU_V1/CPU_V1.srcs/sources_1/bd/RISCV/ip/RISCV_rv32i_control_full_0_0/synth/RISCV_rv32i_control_full_0_0.v:58]
+INFO: [Synth 8-6157] synthesizing module 'rv32i_control_full' [/media/steckler/xilinx_linux/SDR_custom/SDR/Software/SDR-Firmware/CPU_N1_ONE_CYCLE_FULL_RISCV_REAL/CPU_V1/CPU_V1.srcs/sources_1/new/rv32i_control_full.v:23]
+	Parameter IMM_I bound to: 3'b000 
+	Parameter IMM_S bound to: 3'b001 
+	Parameter IMM_B bound to: 3'b010 
+	Parameter IMM_U bound to: 3'b011 
+	Parameter IMM_J bound to: 3'b100 
+	Parameter A_RS1 bound to: 2'b00 
+	Parameter A_PC bound to: 2'b01 
+	Parameter A_ZERO bound to: 2'b10 
+	Parameter WB_ALU bound to: 2'b00 
+	Parameter WB_MEM bound to: 2'b01 
+	Parameter WB_PC4 bound to: 2'b10 
+	Parameter WB_IMM bound to: 2'b11 
+	Parameter ALU_ADD bound to: 4'b0000 
+	Parameter ALU_SUB bound to: 4'b0001 
+	Parameter ALU_AND bound to: 4'b0010 
+	Parameter ALU_OR bound to: 4'b0011 
+	Parameter ALU_XOR bound to: 4'b0100 
+	Parameter ALU_SLL bound to: 4'b0101 
+	Parameter ALU_SRL bound to: 4'b0110 
+	Parameter ALU_SRA bound to: 4'b0111 
+	Parameter ALU_SLT bound to: 4'b1000 
+	Parameter ALU_SLTU bound to: 4'b1001 
+	Parameter SZ_B bound to: 2'b00 
+	Parameter SZ_H bound to: 2'b01 
+	Parameter SZ_W bound to: 2'b10 
+INFO: [Synth 8-226] default block is never used [/media/steckler/xilinx_linux/SDR_custom/SDR/Software/SDR-Firmware/CPU_N1_ONE_CYCLE_FULL_RISCV_REAL/CPU_V1/CPU_V1.srcs/sources_1/new/rv32i_control_full.v:109]
+INFO: [Synth 8-226] default block is never used [/media/steckler/xilinx_linux/SDR_custom/SDR/Software/SDR-Firmware/CPU_N1_ONE_CYCLE_FULL_RISCV_REAL/CPU_V1/CPU_V1.srcs/sources_1/new/rv32i_control_full.v:130]
+INFO: [Synth 8-6155] done synthesizing module 'rv32i_control_full' (1#1) [/media/steckler/xilinx_linux/SDR_custom/SDR/Software/SDR-Firmware/CPU_N1_ONE_CYCLE_FULL_RISCV_REAL/CPU_V1/CPU_V1.srcs/sources_1/new/rv32i_control_full.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'RISCV_rv32i_control_full_0_0' (2#1) [/media/steckler/xilinx_linux/SDR_custom/SDR/Software/SDR-Firmware/CPU_N1_ONE_CYCLE_FULL_RISCV_REAL/CPU_V1/CPU_V1.srcs/sources_1/bd/RISCV/ip/RISCV_rv32i_control_full_0_0/synth/RISCV_rv32i_control_full_0_0.v:58]
+WARNING: [Synth 8-3331] design rv32i_control_full has unconnected port funct7[6]
+WARNING: [Synth 8-3331] design rv32i_control_full has unconnected port funct7[5]
+WARNING: [Synth 8-3331] design rv32i_control_full has unconnected port funct7[4]
+WARNING: [Synth 8-3331] design rv32i_control_full has unconnected port funct7[3]
+WARNING: [Synth 8-3331] design rv32i_control_full has unconnected port funct7[2]
+WARNING: [Synth 8-3331] design rv32i_control_full has unconnected port funct7[1]
+WARNING: [Synth 8-3331] design rv32i_control_full has unconnected port funct7[0]
+WARNING: [Synth 8-3331] design rv32i_control_full has unconnected port fmt[2]
+WARNING: [Synth 8-3331] design rv32i_control_full has unconnected port fmt[1]
+WARNING: [Synth 8-3331] design rv32i_control_full has unconnected port fmt[0]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1518.820 ; gain = 143.465 ; free physical = 305 ; free virtual = 4953
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 1521.789 ; gain = 146.434 ; free physical = 219 ; free virtual = 4878
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z010clg225-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 1529.793 ; gain = 154.438 ; free physical = 218 ; free virtual = 4876
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z010clg225-1
+INFO: [Synth 8-5587] ROM size for "rd_we" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5587] ROM size for "wb_sel" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5546] ROM "opA_sel" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5587] ROM size for "opB_sel_imm" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5546] ROM "imm_sel" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_re" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_we" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "branch_en" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "jal" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "jalr" won't be mapped to RAM because it is too sparse
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1546.707 ; gain = 171.352 ; free physical = 146 ; free virtual = 4790
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Muxes : 
+	   8 Input      4 Bit        Muxes := 2     
+	  10 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 2     
+	  10 Input      3 Bit        Muxes := 1     
+	  10 Input      2 Bit        Muxes := 2     
+	   6 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 1     
+	  10 Input      1 Bit        Muxes := 9     
+	   2 Input      1 Bit        Muxes := 1     
+	   6 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module rv32i_control_full 
+Detailed RTL Component Info : 
++---Muxes : 
+	   8 Input      4 Bit        Muxes := 2     
+	  10 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 2     
+	  10 Input      3 Bit        Muxes := 1     
+	  10 Input      2 Bit        Muxes := 2     
+	   6 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 1     
+	  10 Input      1 Bit        Muxes := 9     
+	   2 Input      1 Bit        Muxes := 1     
+	   6 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 80 (col length:40)
+BRAMs: 120 (col length: RAMB18 40 RAMB36 20)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-5587] ROM size for "inst/rd_we" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5587] ROM size for "inst/wb_sel" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5546] ROM "inst/opA_sel" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5587] ROM size for "inst/opB_sel_imm" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5546] ROM "inst/imm_sel" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "inst/mem_re" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "inst/mem_we" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "inst/branch_en" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "inst/jal" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "inst/jalr" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-3917] design RISCV_rv32i_control_full_0_0 has port opA_sel[1] driven by constant 0
+WARNING: [Synth 8-3331] design RISCV_rv32i_control_full_0_0 has unconnected port funct7[6]
+WARNING: [Synth 8-3331] design RISCV_rv32i_control_full_0_0 has unconnected port funct7[5]
+WARNING: [Synth 8-3331] design RISCV_rv32i_control_full_0_0 has unconnected port funct7[4]
+WARNING: [Synth 8-3331] design RISCV_rv32i_control_full_0_0 has unconnected port funct7[3]
+WARNING: [Synth 8-3331] design RISCV_rv32i_control_full_0_0 has unconnected port funct7[2]
+WARNING: [Synth 8-3331] design RISCV_rv32i_control_full_0_0 has unconnected port funct7[1]
+WARNING: [Synth 8-3331] design RISCV_rv32i_control_full_0_0 has unconnected port funct7[0]
+WARNING: [Synth 8-3331] design RISCV_rv32i_control_full_0_0 has unconnected port fmt[2]
+WARNING: [Synth 8-3331] design RISCV_rv32i_control_full_0_0 has unconnected port fmt[1]
+WARNING: [Synth 8-3331] design RISCV_rv32i_control_full_0_0 has unconnected port fmt[0]
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 1655.121 ; gain = 279.766 ; free physical = 187 ; free virtual = 3966
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 1655.121 ; gain = 279.766 ; free physical = 135 ; free virtual = 3957
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 1655.121 ; gain = 279.766 ; free physical = 133 ; free virtual = 3958
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:08 ; elapsed = 00:00:11 . Memory (MB): peak = 1655.121 ; gain = 279.766 ; free physical = 124 ; free virtual = 3662
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:08 ; elapsed = 00:00:11 . Memory (MB): peak = 1655.121 ; gain = 279.766 ; free physical = 125 ; free virtual = 3659
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:08 ; elapsed = 00:00:11 . Memory (MB): peak = 1655.121 ; gain = 279.766 ; free physical = 123 ; free virtual = 3655
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:08 ; elapsed = 00:00:11 . Memory (MB): peak = 1655.121 ; gain = 279.766 ; free physical = 126 ; free virtual = 3656
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:08 ; elapsed = 00:00:11 . Memory (MB): peak = 1655.121 ; gain = 279.766 ; free physical = 126 ; free virtual = 3655
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:08 ; elapsed = 00:00:11 . Memory (MB): peak = 1655.121 ; gain = 279.766 ; free physical = 128 ; free virtual = 3655
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----+------+
+|      |Cell |Count |
++------+-----+------+
+|1     |LUT2 |     3|
+|2     |LUT3 |     3|
+|3     |LUT4 |     3|
+|4     |LUT5 |     9|
+|5     |LUT6 |     9|
++------+-----+------+
+
+Report Instance Areas: 
++------+---------+-------+------+
+|      |Instance |Module |Cells |
++------+---------+-------+------+
+|1     |top      |       |    27|
++------+---------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:08 ; elapsed = 00:00:11 . Memory (MB): peak = 1655.121 ; gain = 279.766 ; free physical = 123 ; free virtual = 3647
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 20 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:08 ; elapsed = 00:00:11 . Memory (MB): peak = 1655.121 ; gain = 279.766 ; free physical = 119 ; free virtual = 3625
+Synthesis Optimization Complete : Time (s): cpu = 00:00:08 ; elapsed = 00:00:11 . Memory (MB): peak = 1655.129 ; gain = 279.766 ; free physical = 131 ; free virtual = 3633
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1798.711 ; gain = 0.000 ; free physical = 131 ; free virtual = 3709
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+34 Infos, 21 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:10 ; elapsed = 00:00:13 . Memory (MB): peak = 1798.711 ; gain = 423.355 ; free physical = 152 ; free virtual = 3792
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1798.711 ; gain = 0.000 ; free physical = 151 ; free virtual = 3792
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Common 17-1381] The checkpoint '/media/steckler/xilinx_linux/SDR_custom/SDR/Software/SDR-Firmware/CPU_N1_ONE_CYCLE_FULL_RISCV_REAL/CPU_V1/CPU_V1.runs/RISCV_rv32i_control_full_0_0_synth_1/RISCV_rv32i_control_full_0_0.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 2235.723 ; gain = 437.012 ; free physical = 464 ; free virtual = 2658
+WARNING: [Common 17-576] 'use_project_ipc' is deprecated. This option is deprecated and no longer used.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2235.723 ; gain = 0.000 ; free physical = 682 ; free virtual = 3229
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint '/media/steckler/xilinx_linux/SDR_custom/SDR/Software/SDR-Firmware/CPU_N1_ONE_CYCLE_FULL_RISCV_REAL/CPU_V1/CPU_V1.runs/RISCV_rv32i_control_full_0_0_synth_1/RISCV_rv32i_control_full_0_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file RISCV_rv32i_control_full_0_0_utilization_synth.rpt -pb RISCV_rv32i_control_full_0_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sat Feb 14 14:52:48 2026...

@@ -1,0 +1,13 @@
+timestamp=[2021-09-10 11:38:49], mode=WORKBENCH_START, duration=0:00:05.851, duration_ms=5851, data={}
+timestamp=[2021-09-10 11:38:50], mode=WORKBENCH_UI_INIT, duration=0:00:00.420, duration_ms=420, data={editors_count=0, platform_editors_count=0, projects_count=0, platform_projects_count=0, active_platform_editor=false, projects=}
+timestamp=[2021-09-10 11:38:53], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:02.460, duration_ms=2460, data={}
+timestamp=[2021-09-10 11:40:35], mode=APP_CREATION, duration=0:00:26.802, duration_ms=26802, data={name=axi_gpio, project_type=sdk, os=standalone, processor=psu_cortexa53, runtime=cpp, platform=design_1_wrapper, application_type=application}
+timestamp=[2021-09-10 11:42:45], mode=PLATFORM_GENERATION, duration=0:01:46.717, duration_ms=106717, data={name=design_1_wrapper}
+timestamp=[2021-09-10 11:42:45], mode=BUILD, duration=0:00:00.769, duration_ms=769, data={name=axi_gpio, configuration=Debug, clean_build=false}
+timestamp=[2021-09-10 11:42:51], mode=BUILD, duration=0:00:05.204, duration_ms=5204, data={name=axi_gpio_system, configuration=Debug, clean_build=false}
+timestamp=[2021-09-10 11:43:39], mode=MISC, duration=0:00:03.422, duration_ms=3422, data={name=axi_gpio_system, type=bif_creation}
+timestamp=[2021-09-10 11:43:46], mode=BUILD, duration=0:00:00.282, duration_ms=282, data={name=axi_gpio, configuration=Debug, clean_build=false}
+timestamp=[2021-09-10 11:43:52], mode=BUILD, duration=0:00:05.758, duration_ms=5758, data={name=axi_gpio_system, configuration=Debug, clean_build=false}
+timestamp=[2021-09-10 13:48:12], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.042, duration_ms=42, data={}
+timestamp=[2021-09-10 13:48:12], mode=WORKBENCH_START, duration=0:00:07.213, duration_ms=7213, data={}
+timestamp=[2021-09-10 13:48:13], mode=WORKBENCH_UI_INIT, duration=0:00:00.826, duration_ms=826, data={editors_count=2, platform_editors_count=0, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=RemoteSystemsTempFiles,axi_gpio,axi_gpio_system,design_1_wrapper}
