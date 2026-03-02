@@ -28,13 +28,13 @@ proc validate_PARAM_VALUE.WORDS { PARAM_VALUE.WORDS } {
 }
 
 
-proc update_MODELPARAM_VALUE.WORDS { MODELPARAM_VALUE.WORDS PARAM_VALUE.WORDS } {
-	# Procedure called to set VHDL generic/Verilog parameter value(s) based on TCL parameter value
-	set_property value [get_property value ${PARAM_VALUE.WORDS}] ${MODELPARAM_VALUE.WORDS}
-}
-
 proc update_MODELPARAM_VALUE.ADDR_WIDTH { MODELPARAM_VALUE.ADDR_WIDTH PARAM_VALUE.ADDR_WIDTH } {
 	# Procedure called to set VHDL generic/Verilog parameter value(s) based on TCL parameter value
 	set_property value [get_property value ${PARAM_VALUE.ADDR_WIDTH}] ${MODELPARAM_VALUE.ADDR_WIDTH}
+}
+
+proc update_MODELPARAM_VALUE.WORDS { MODELPARAM_VALUE.WORDS PARAM_VALUE.WORDS } {
+	# Procedure called to set VHDL generic/Verilog parameter value(s) based on TCL parameter value
+	set_property value [get_property value ${PARAM_VALUE.WORDS}] ${MODELPARAM_VALUE.WORDS}
 }
 

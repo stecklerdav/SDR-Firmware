@@ -1,8 +1,27 @@
 
-  
+  *** Debo hacer las pruebas de verificacion y llenar los documentos necesarios ***
 
 
-              ****  Proximo generar el clock y ver que pasa en el ILA con Vivado y ver las senales del RV32i ***
+
+
+02/03/2026
+
+	-Cree otro BD con ILA y VIO para la etapa IF verificacion.
+
+
+23/02/2026
+	- Genere bloques con subbloque para hacerlo mas legible, tambien corregio el mmio porque las direcciones no estaban correctas porque el decoder tenia direciones relativas con un offset y la ram no  		  estaba bien on eso. el gpio tambien no estaba referenciado a eso. simule el ILA en otro BD para no tocar el Original RISCV.
+	- Valores consistentes, probar mas sobre el MMIO Gpio.
+	- Genere en Docs los documentos para verificacion de harware a nivel industrial.
+ 
+
+
+22/02/2026
+	- no necesite una aplicacion en base al hardware solo debo generara el bitstream y cargarlo por jtag çuego veo el ILA y puntos d pruebas.
+
+              
+20/02/2026
+	- Genere la hardware_app con el xsa y ahora lo proximo es cargar la riscv_app con Run as.. y luego volver al vivado y cargar el bitstream de nuevo alli activara el ILA
 
 
 17/02/2026
@@ -11,7 +30,7 @@
 
 
  	
-15/12/025
+15/12/2025
 
 	-videos sobre arquitectura RISCV
 

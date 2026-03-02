@@ -5,12 +5,12 @@ prog.elf:     file format elf32-littleriscv
 Disassembly of section .text:
 
 00000000 <__text_start>:
-   0:	00002117          	auipc	sp,0x2
+   0:	00003117          	auipc	sp,0x3
    4:	00010113          	mv	sp,sp
-   8:	00001297          	auipc	t0,0x1
-   c:	ff828293          	addi	t0,t0,-8 # 1000 <__end>
-  10:	00001317          	auipc	t1,0x1
-  14:	ff030313          	addi	t1,t1,-16 # 1000 <__end>
+   8:	00002297          	auipc	t0,0x2
+   c:	ff828293          	addi	t0,t0,-8 # 2000 <__end>
+  10:	00002317          	auipc	t1,0x2
+  14:	ff030313          	addi	t1,t1,-16 # 2000 <__end>
   18:	00000393          	li	t2,0
   1c:	0062d863          	bge	t0,t1,2c <__heap_align+0x1c>
   20:	00728023          	sb	t2,0(t0)
@@ -20,24 +20,5 @@ Disassembly of section .text:
   30:	0000006f          	j	30 <__heap_align+0x20>
 
 00000034 <main>:
-  34:	000027b7          	lui	a5,0x2
-  38:	fff00713          	li	a4,-1
-  3c:	00e7a223          	sw	a4,4(a5) # 2004 <__ram_end+0x4>
-  40:	00100693          	li	a3,1
-  44:	00078713          	mv	a4,a5
-  48:	000317b7          	lui	a5,0x31
-  4c:	00d72023          	sw	a3,0(a4)
-  50:	d4078793          	addi	a5,a5,-704 # 30d40 <__ram_end+0x2ed40>
-  54:	00078613          	mv	a2,a5
-  58:	fff78793          	addi	a5,a5,-1
-  5c:	02061263          	bnez	a2,80 <main+0x4c>
-  60:	000317b7          	lui	a5,0x31
-  64:	00072023          	sw	zero,0(a4)
-  68:	d4078793          	addi	a5,a5,-704 # 30d40 <__ram_end+0x2ed40>
-  6c:	00078613          	mv	a2,a5
-  70:	fff78793          	addi	a5,a5,-1
-  74:	fc060ae3          	beqz	a2,48 <main+0x14>
-  78:	00000013          	nop
-  7c:	ff1ff06f          	j	6c <main+0x38>
-  80:	00000013          	nop
-  84:	fd1ff06f          	j	54 <main+0x20>
+  34:	00000013          	nop
+  38:	ffdff06f          	j	34 <main>

@@ -14024,7 +14024,7 @@
       <spirit:parameters>
         <spirit:parameter>
           <spirit:name>FREQ_HZ</spirit:name>
-          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.PL_CLK1.FREQ_HZ">149998505</spirit:value>
+          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.PL_CLK1.FREQ_HZ">99999001</spirit:value>
           <spirit:vendorExtensions>
             <xilinx:parameterInfo>
               <xilinx:parameterUsage>none</xilinx:parameterUsage>
@@ -23092,7 +23092,7 @@
     <spirit:addressSpace>
       <spirit:name>Data</spirit:name>
       <spirit:displayName>Data</spirit:displayName>
-      <spirit:range>1T</spirit:range>
+      <spirit:range spirit:format="long">1T</spirit:range>
       <spirit:width spirit:format="long">64</spirit:width>
       <spirit:segments>
         <spirit:segment>
@@ -31089,11 +31089,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Tue Feb 17 14:49:31 UTC 2026</spirit:value>
+            <spirit:value>Sat Feb 21 19:21:59 UTC 2026</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:0bfb8741</spirit:value>
+            <spirit:value>9:409a7949</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -31104,7 +31104,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:0bfb8741</spirit:value>
+            <spirit:value>9:409a7949</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -31120,11 +31120,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Tue Feb 17 14:49:34 UTC 2026</spirit:value>
+            <spirit:value>Sat Feb 21 19:22:01 UTC 2026</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:0bfb8741</spirit:value>
+            <spirit:value>9:409a7949</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -31145,11 +31145,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Tue Feb 17 14:49:35 UTC 2026</spirit:value>
+            <spirit:value>Sat Feb 21 19:22:02 UTC 2026</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:46ae6842</spirit:value>
+            <spirit:value>9:2a350e1f</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -31165,11 +31165,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Tue Feb 17 14:49:35 UTC 2026</spirit:value>
+            <spirit:value>Sat Feb 21 19:22:03 UTC 2026</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:9835b2d4</spirit:value>
+            <spirit:value>9:01e3506a</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>sim_type</spirit:name>
@@ -31188,11 +31188,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Tue Feb 17 14:49:35 UTC 2026</spirit:value>
+            <spirit:value>Sat Feb 21 19:22:03 UTC 2026</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:46ae6842</spirit:value>
+            <spirit:value>9:2a350e1f</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -31208,11 +31208,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Tue Feb 17 14:49:36 UTC 2026</spirit:value>
+            <spirit:value>Sat Feb 21 19:22:03 UTC 2026</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:9835b2d4</spirit:value>
+            <spirit:value>9:01e3506a</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>sim_type</spirit:name>
@@ -31227,7 +31227,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:0bfb8741</spirit:value>
+            <spirit:value>9:409a7949</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -77320,7 +77320,7 @@ _DMA;FFC80000;FFC9FFFF;1|LPD;CSU;FFCA0000;FFCAFFFF;1|LPD;CRL_APB;FF5E0000;FF85FF
     <spirit:parameter>
       <spirit:name>PSU__CRL_APB__PL0_REF_CTRL__DIVISOR0</spirit:name>
       <spirit:displayName>PL0 DIV0</spirit:displayName>
-      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.PSU__CRL_APB__PL0_REF_CTRL__DIVISOR0" spirit:choiceRef="choice_list_efecb9ff">12</spirit:value>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.PSU__CRL_APB__PL0_REF_CTRL__DIVISOR0" spirit:choiceRef="choice_list_efecb9ff">8</spirit:value>
       <spirit:vendorExtensions>
         <xilinx:parameterInfo>
           <xilinx:enablement>
@@ -77590,7 +77590,7 @@ _DMA;FFC80000;FFC9FFFF;1|LPD;CSU;FFCA0000;FFCAFFFF;1|LPD;CRL_APB;FF5E0000;FF85FF
     <spirit:parameter>
       <spirit:name>PSU__CRL_APB__RPLL_CTRL__FBDIV</spirit:name>
       <spirit:displayName>RPLL</spirit:displayName>
-      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.PSU__CRL_APB__RPLL_CTRL__FBDIV" spirit:choiceRef="choice_list_efecb9ff">72</spirit:value>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.PSU__CRL_APB__RPLL_CTRL__FBDIV" spirit:choiceRef="choice_list_efecb9ff">48</spirit:value>
       <spirit:vendorExtensions>
         <xilinx:parameterInfo>
           <xilinx:enablement>
@@ -77614,7 +77614,7 @@ _DMA;FFC80000;FFC9FFFF;1|LPD;CSU;FFCA0000;FFCAFFFF;1|LPD;CRL_APB;FF5E0000;FF85FF
     <spirit:parameter>
       <spirit:name>PSU__CRL_APB__RPLL_TO_FPD_CTRL__DIVISOR0</spirit:name>
       <spirit:displayName>RPLL_TO_FPD</spirit:displayName>
-      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.PSU__CRL_APB__RPLL_TO_FPD_CTRL__DIVISOR0" spirit:choiceRef="choice_list_efecb9ff">3</spirit:value>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.PSU__CRL_APB__RPLL_TO_FPD_CTRL__DIVISOR0" spirit:choiceRef="choice_list_efecb9ff">2</spirit:value>
       <spirit:vendorExtensions>
         <xilinx:parameterInfo>
           <xilinx:enablement>
@@ -77818,7 +77818,7 @@ _DMA;FFC80000;FFC9FFFF;1|LPD;CSU;FFCA0000;FFCAFFFF;1|LPD;CRL_APB;FF5E0000;FF85FF
     <spirit:parameter>
       <spirit:name>PSU__CRL_APB__SDIO0_REF_CTRL__DIVISOR0</spirit:name>
       <spirit:displayName>SDIO0 DIV0</spirit:displayName>
-      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.PSU__CRL_APB__SDIO0_REF_CTRL__DIVISOR0" spirit:choiceRef="choice_list_efecb9ff">6</spirit:value>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.PSU__CRL_APB__SDIO0_REF_CTRL__DIVISOR0" spirit:choiceRef="choice_list_efecb9ff">4</spirit:value>
       <spirit:vendorExtensions>
         <xilinx:parameterInfo>
           <xilinx:enablement>
@@ -77842,7 +77842,7 @@ _DMA;FFC80000;FFC9FFFF;1|LPD;CSU;FFCA0000;FFCAFFFF;1|LPD;CRL_APB;FF5E0000;FF85FF
     <spirit:parameter>
       <spirit:name>PSU__CRL_APB__SDIO1_REF_CTRL__DIVISOR0</spirit:name>
       <spirit:displayName>SDIO1 DIV0</spirit:displayName>
-      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.PSU__CRL_APB__SDIO1_REF_CTRL__DIVISOR0" spirit:choiceRef="choice_list_efecb9ff">6</spirit:value>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.PSU__CRL_APB__SDIO1_REF_CTRL__DIVISOR0" spirit:choiceRef="choice_list_efecb9ff">4</spirit:value>
       <spirit:vendorExtensions>
         <xilinx:parameterInfo>
           <xilinx:enablement>
@@ -78080,7 +78080,7 @@ _DMA;FFC80000;FFC9FFFF;1|LPD;CSU;FFCA0000;FFCAFFFF;1|LPD;CRL_APB;FF5E0000;FF85FF
     <spirit:parameter>
       <spirit:name>PSU__CRL_APB__IOU_SWITCH_CTRL__DIVISOR0</spirit:name>
       <spirit:displayName>IOU SWITCH DIV0</spirit:displayName>
-      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.PSU__CRL_APB__IOU_SWITCH_CTRL__DIVISOR0" spirit:choiceRef="choice_list_efecb9ff">5</spirit:value>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.PSU__CRL_APB__IOU_SWITCH_CTRL__DIVISOR0" spirit:choiceRef="choice_list_efecb9ff">3</spirit:value>
       <spirit:vendorExtensions>
         <xilinx:parameterInfo>
           <xilinx:enablement>
@@ -78851,7 +78851,7 @@ _DMA;FFC80000;FFC9FFFF;1|LPD;CSU;FFCA0000;FFCAFFFF;1|LPD;CRL_APB;FF5E0000;FF85FF
     <spirit:parameter>
       <spirit:name>PSU__CRL_APB__PL1_REF_CTRL__ACT_FREQMHZ</spirit:name>
       <spirit:displayName>ACT PL1</spirit:displayName>
-      <spirit:value spirit:format="float" spirit:resolve="user" spirit:id="PARAM_VALUE.PSU__CRL_APB__PL1_REF_CTRL__ACT_FREQMHZ" spirit:minimum="-2" spirit:maximum="-1">149.998505</spirit:value>
+      <spirit:value spirit:format="float" spirit:resolve="user" spirit:id="PARAM_VALUE.PSU__CRL_APB__PL1_REF_CTRL__ACT_FREQMHZ" spirit:minimum="-2" spirit:maximum="-1">99.999001</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>PSU__CRL_APB__PL2_REF_CTRL__ACT_FREQMHZ</spirit:name>
@@ -79001,7 +79001,7 @@ _DMA;FFC80000;FFC9FFFF;1|LPD;CSU;FFCA0000;FFCAFFFF;1|LPD;CRL_APB;FF5E0000;FF85FF
     <spirit:parameter>
       <spirit:name>PSU__CRL_APB__IOU_SWITCH_CTRL__ACT_FREQMHZ</spirit:name>
       <spirit:displayName>ACT IOU_SWITCH</spirit:displayName>
-      <spirit:value spirit:format="float" spirit:resolve="user" spirit:id="PARAM_VALUE.PSU__CRL_APB__IOU_SWITCH_CTRL__ACT_FREQMHZ" spirit:minimum="-2" spirit:maximum="-1">239.997604</spirit:value>
+      <spirit:value spirit:format="float" spirit:resolve="user" spirit:id="PARAM_VALUE.PSU__CRL_APB__IOU_SWITCH_CTRL__ACT_FREQMHZ" spirit:minimum="-2" spirit:maximum="-1">266.664001</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>PSU__CRL_APB__CSU_PLL_CTRL__ACT_FREQMHZ</spirit:name>
@@ -79163,7 +79163,7 @@ _DMA;FFC80000;FFC9FFFF;1|LPD;CSU;FFCA0000;FFCAFFFF;1|LPD;CRL_APB;FF5E0000;FF85FF
     <spirit:parameter>
       <spirit:name>PSU__CRL_APB__PL1_REF_CTRL__FREQMHZ</spirit:name>
       <spirit:displayName>PL1</spirit:displayName>
-      <spirit:value spirit:format="float" spirit:resolve="user" spirit:id="PARAM_VALUE.PSU__CRL_APB__PL1_REF_CTRL__FREQMHZ" spirit:minimum="0.000000" spirit:maximum="1600.000000">150</spirit:value>
+      <spirit:value spirit:format="float" spirit:resolve="user" spirit:id="PARAM_VALUE.PSU__CRL_APB__PL1_REF_CTRL__FREQMHZ" spirit:minimum="0.000000" spirit:maximum="1600.000000">100</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>PSU__CRL_APB__PL2_REF_CTRL__FREQMHZ</spirit:name>

@@ -7,9 +7,9 @@
 # 
 
 if [ -z "$PATH" ]; then
-  PATH=/media/steckler/xilinx_linux/vitis_2020.1/Vitis/2020.1/bin:/media/steckler/xilinx_linux/vitis_2020.1/Vivado/2020.1/ids_lite/ISE/bin/lin64:/media/steckler/xilinx_linux/vitis_2020.1/Vivado/2020.1/bin
+  PATH=/media/steckler/xilinx_linux/vivado_2020.1/Vitis/2020.1/bin:/media/steckler/xilinx_linux/vivado_2020.1/Vivado/2020.1/ids_lite/ISE/bin/lin64:/media/steckler/xilinx_linux/vivado_2020.1/Vivado/2020.1/bin
 else
-  PATH=/media/steckler/xilinx_linux/vitis_2020.1/Vitis/2020.1/bin:/media/steckler/xilinx_linux/vitis_2020.1/Vivado/2020.1/ids_lite/ISE/bin/lin64:/media/steckler/xilinx_linux/vitis_2020.1/Vivado/2020.1/bin:$PATH
+  PATH=/media/steckler/xilinx_linux/vivado_2020.1/Vitis/2020.1/bin:/media/steckler/xilinx_linux/vivado_2020.1/Vivado/2020.1/ids_lite/ISE/bin/lin64:/media/steckler/xilinx_linux/vivado_2020.1/Vivado/2020.1/bin:$PATH
 fi
 export PATH
 
@@ -20,7 +20,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='/media/steckler/xilinx_linux/SDR_custom/SDR/Software/SDR-Firmware/CPU_N1_ONE_CYCLE_FULL_RISCV_REAL_MPzynq_2020.1/CPU_V1/CPU_V1.runs/synth_1'
+HD_PWD='/media/steckler/xilinx_linux/SDR_custom/SDR/Software/SDR_Firmware/CPU_N1_ONECYCLE_RISCV_2020.1_MYIR/CPU_V1/CPU_V1.runs/synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log
@@ -36,4 +36,4 @@ EAStep()
      fi
 }
 
-EAStep vivado -log RISCV_wrapper.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source RISCV_wrapper.tcl
+EAStep vivado -log Sections_wrapper.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source Sections_wrapper.tcl

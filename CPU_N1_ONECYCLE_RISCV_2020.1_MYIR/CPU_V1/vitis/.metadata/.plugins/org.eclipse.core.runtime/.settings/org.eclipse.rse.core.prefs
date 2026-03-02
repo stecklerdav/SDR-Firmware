@@ -1,2 +1,4 @@
+activeuserprofiles=Team;steckler-Default-string;xilinx
 eclipse.preferences.version=1
 org.eclipse.rse.systemtype.local.systemType.defaultUserId=steckler
+useridperkey=xilinx.Local\=steckler;

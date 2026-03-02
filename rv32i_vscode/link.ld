@@ -1,14 +1,13 @@
 ENTRY(_start)
 MEMORY
 {
-  ROM  (rx)  : ORIGIN = 0x00000000, LENGTH = 4K
-  RAM  (rwx) : ORIGIN = 0x00001000, LENGTH = 4K
-  MMIO (rw)  : ORIGIN = 0x00002000, LENGTH = 256
+  ROM  (rx)  : ORIGIN = 0x00000000, LENGTH = 8K    /* 2048 words word-addresses */
+  RAM  (rwx) : ORIGIN = 0x00002000, LENGTH = 4K    /* 4096 bytes byte-addresses */
+  MMIO (rw)  : ORIGIN = 0x00003000, LENGTH = 256   /* 256 bytes byte-addresses*/
 }
 
-
-__stack_size = 0x400;  /* 1 KB stack */
-__heap_align = 16;     /* ABI alignment */
+__stack_size = 0x400;
+__heap_align = 16;
 
 SECTIONS
 {
@@ -51,6 +50,5 @@ SECTIONS
   __ram_end     = ORIGIN(RAM) + LENGTH(RAM);
   __stack_top   = __ram_end;
   __stack_limit = __stack_top - __stack_size;
-
-  __heap_end = __stack_limit;
+  __heap_end    = __stack_limit;
 }

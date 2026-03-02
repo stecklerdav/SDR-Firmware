@@ -55,6 +55,7 @@
 (* IP_DEFINITION_SOURCE = "module_ref" *)
 (* DowngradeIPIdentifiedWarnings = "yes" *)
 module RISCV_rv32i_pc_redirect_0_0 (
+  rst,
   pc,
   rs1,
   rs2,
@@ -69,6 +70,9 @@ module RISCV_rv32i_pc_redirect_0_0 (
   pc_redirect_target
 );
 
+(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME rst, POLARITY ACTIVE_HIGH, INSERT_VIP 0" *)
+(* X_INTERFACE_INFO = "xilinx.com:signal:reset:1.0 rst RST" *)
+input wire rst;
 input wire [31 : 0] pc;
 input wire [31 : 0] rs1;
 input wire [31 : 0] rs2;
@@ -83,6 +87,7 @@ output wire pc_redirect_valid;
 output wire [31 : 0] pc_redirect_target;
 
   rv32i_pc_redirect inst (
+    .rst(rst),
     .pc(pc),
     .rs1(rs1),
     .rs2(rs2),

@@ -6,4 +6,4 @@
 # Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
 #
 
-vivado -log RISCV_wrapper.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source RISCV_wrapper.tcl -notrace
+vivado -log Sections_wrapper.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source Sections_wrapper.tcl -notrace

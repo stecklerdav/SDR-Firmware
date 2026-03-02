@@ -19,7 +19,7 @@
 // 
 //////////////////////////////////////////////////////////////////////////////////
 module pc_to_rom_addr #(
-    parameter integer ADDR_W = 8   // 256 words
+    parameter integer ADDR_W = 10   // 256 words
 )(
     input  wire [31:0] pc,
     output wire [ADDR_W-1:0] a
